@@ -6,18 +6,30 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- Apresentação de um audio local
+        Para mostrar os controles de pausa e play obrigatorio usar o atributo "controls"
+        Para selecionar um play automatico no carregamento da pagina usa-se o atributo "autoplay" -->
     <h1>Audio</h1>
-    <audio src="audio/audiotest.mp3" controls ></audio>
+    <audio src="audio/audiotest.mp3" controls autoplay></audio>
 
+    <!-- Apresentação de video local com uma pre imagem carregada antes do video (definição : poster="")-->
     <h1>Video local</h1>
-    <video src="video/video.mp4" controls></video>
+    <video src="video/video.mp4" controls width="500px" poster="img/facebook.png" autoplay></video>
 
+    <!-- Iframe para mostrar uma pagina web "online" dentro da nossa pagina -->>
     <h1>iFrame</h1>
     <iframe src="https://www.cesaedigital.pt/" width="500px" frameborder="0"></iframe>
 
+    <!-- Iframe para mostrar uma pagina web "local" dentro da nossa pagina -->>
     <h1>iFrame</h1>
-    
+    <iframe src="exercicio.html" width="600px" frameborder="0"></iframe>
 
+    <!-- Iframe para mostrar uma pagina web online dentrodanossa pagina 
+    Contudo nao é mostrada devido a privacidade da pagina -->>
+    <h1>iFrame</h1>
+    <iframe src="https://www.google.com/" frameborder="0"><iframe>
+ 
     <!-- Video Youtube publico-->
     <h1>Video Youtube</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/0sNNn_xj8CY?si=3kyTOzWr4AGVGK86" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
