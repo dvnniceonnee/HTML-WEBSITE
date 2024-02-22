@@ -1,0 +1,17 @@
+
+body{
+    background-color: goldenrod;
+    padding:20px;
+    text-align: center;
+}
+p{
+    background-color: red;
+    border-color: black;
+    padding: 10px;
+    margin: 10px;
+    
+}
+div{
+    background-color: black;
+    padding: 5px;
+}
