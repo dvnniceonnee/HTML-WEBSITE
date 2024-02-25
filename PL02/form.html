@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title favicon="">Formulario</title>
+    <link rel="icon" href="img/facebook.png">
+</head>
+<body>
+    <header>
+        <div style="text-align: center;">
+            <a href="http://www.cesaedigital.pt" target="_blank"><img src="img/imagemcesae.png" width="300px"></a>
+            <br>
+            <nav>        
+                <a href="http://www.cesaedigital.pt" target="_blank">Ir para o site Oficial</a>
+                <br>
+                <!-- Links para as redes sociais-->
+                <a href="https://www.facebook.com/CesaeDigital" target="_blank">
+                    <img alt="Logo do facebook" src="img/facebook.png" height="40px"></a>
+                <a href="https://www.linkedin.com/company/cesae-digital/mycompany/" target="_blank">
+                    <img alt="logo do linkedin" src="img/linkedin.png" height="40px"></a>
+                <a href="https://www.youtube.com/user/CESAECanal?cbrd=1&themeRefresh=1" target="_blank">
+                    <img alt="logo do youtube" src="img/youtube.png" height="40px"></a>
+            </nav>
+        </div>
+        <hr>
+    </header>
+    <main >
+        <div style="width: 500px; margin: auto;">
+            <form action="">
+                <fieldset>
+                    <legend>Formulário dde contacto do CESAE</legend>
+                    <div>
+                        <label for="input_name">Nome : </label>
+                        <input type="text" name="name" id="input_name" placeholder="Introduza o seu nome" maxlength="10" required>
+                    </div>
+                    <div>
+                        <label for="input_email">Email : </label>
+                        <input type="email" name="email" id="input_email" placeholder="Email@cesae.pt">
+                    </div>
+                    <br>
+                    
+                    <div>            
+                        <label for="">Genero</label><br>
+                        <input type="radio" name="genero" id="" value="fem"><label for="">Feminino</label></input><br>
+                        <input type="radio" name="genero" id="" value="masc"><label for="">Masculino</label></input><br>
+                    </div>
+                    <div>
+                        <label for="">Data Atual : </label>
+                        <input type="date" name="date" id="">
+                    </div>
+                    <div>
+                        <label for="selecao_turma">Turma : </label>
+                        <select name="turma" id="selecao_turma">
+                            <option value="" selected disabled>Selecione uma opção</option>
+                            <option value="turma_webdev&mob">Web Developer & Mobile</option>
+                            <option value="turma_outra" >Outra</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="text_utilizador">Mensagem</label>
+                        <textarea name="mensagem" id="text_utilizador" cols="30" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Submeter">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div style="text-align: center;">
+            <hr>
+            <h5>Desenvolvido por Miguel Madureira</h5>
+        </div>
+    </footer>
+</body>
+</html>
