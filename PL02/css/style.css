@@ -1,5 +1,5 @@
 
-body{
+/*body{
     background-color: goldenrod;
     padding:20px;
     text-align: center;
@@ -14,4 +14,69 @@ p{
 div{
     background-color: black;
     padding: 5px;
+}*/
+body
+{
+    background-color: bisque;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#logotipo_header
+{
+    text-align: center;
+}
+#imagem_header
+{
+    width: 50%;
+}
+nav
+{
+    text-align: center;
+    background-color: grey;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+footer
+{
+    text-align: center;
+    background-color: grey;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+header div{
+    max-height: 40%;
+}
+.butoes_redesociais img{
+    margin: 1px;
+    height: 20px;
+}
+.div_butoes_redessociais
+{
+    margin: 5px 0px;
+}
+.butoes_redesociais
+{
+    border: 1px solid  black;
+    display: inline;
+    margin: 0 5px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+nav a{
+    color: white;
+}
+p{
+    text-align: justify;
+}
+header a{
+    margin: 0 5px;
+}
+main
+{
+    padding: 0 10px;
+}
+
+
