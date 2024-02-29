@@ -54,25 +54,31 @@ header div{
 }
 .div_butoes_redessociais
 {
-    margin: 5px 0px;
+    margin: 5px 5px;
 }
 .butoes_redesociais
 {
-    border: 1px solid  black;
     display: inline;
     margin: 0 5px;
     border-radius: 4px;
     padding: 5px;
 }
+.butoes_redesociais i{
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 40px;
+    border-radius: 4px;
+    color: black;
+}
 
-nav a{
-    color: white;
+#links_paginas a{
+    color: black;
+    margin: 0 5px;
+    font-weight: bold;
 }
 p{
     text-align: justify;
-}
-header a{
-    margin: 0 5px;
 }
 main
 {
