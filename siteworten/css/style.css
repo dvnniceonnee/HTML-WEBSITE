@@ -1,0 +1,46 @@
+:root{
+    --vermelho : #e51b15;
+    --branco: white;
+    --preto : black;
+    --cinzento : #aaa;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.btn{
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border: 1px solid var(--branco);
+}
+.btn:hover
+{
+    background-color: var(--branco);
+    color: var(--vermelho);
+}
+header{
+    background-color: var(--vermelho);
+}
+
+header img{
+    width: 200px;
+}
+nav input{
+    background-color: var(--branco)!important ;
+    color: var(--preto) !important;
+}
+nav input::placeholder{
+    color: var(--cinzento)!important ;
+}
+
+footer{
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
+
+footer a{
+    color: var(--branco);
+    border: 1px solid var(--branco);
+    padding: 5px 8px;
+    border-radius: 100%;
+}
