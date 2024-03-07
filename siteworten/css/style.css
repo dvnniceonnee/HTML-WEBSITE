@@ -3,11 +3,20 @@
     --branco: white;
     --preto : black;
     --cinzento : #aaa;
+    --verde : #07f572;
+    --amarelo: #fdf900;
 }
-
 body{
     font-family: "Open Sans", sans-serif;
 }
+header{
+    background-color: var(--vermelho);
+}
+
+header img{
+    width: 200px;
+}
+
 .btn{
     background-color: var(--vermelho);
     color: var(--branco);
@@ -17,20 +26,35 @@ body{
 {
     background-color: var(--branco);
     color: var(--vermelho);
+    border: 1px solid var(--vermelho);
 }
-header{
-    background-color: var(--vermelho);
+.badge--verde{
+    background-color: var(--verde);
+}
+.badge--amarelo
+{
+background-color: var(--amarelo);
 }
 
-header img{
-    width: 200px;
+.carousel-caption h5, .carousel-caption p  {
+    background-color: var(--preto);
+    color: var(--branco);
 }
+
 nav input{
     background-color: var(--branco)!important ;
     color: var(--preto) !important;
 }
 nav input::placeholder{
     color: var(--cinzento)!important ;
+}
+.card-title{
+    min-height: 75px;
+}
+
+#googleMaps
+{
+    height: 400px;
 }
 
 footer{

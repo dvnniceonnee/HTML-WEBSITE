@@ -65,6 +65,76 @@
         </nav>
     </header>
     <main class="mb-2 p-3 rounded shadow">
+        <div class="container">
+            <div class="row ">
+                <!-- Mapa -->
+                <div class="col-12 col-md-6">
+                    <iframe id="googleMaps" class="w-100 rounded-3 border border-primary" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48056.6463906372!2d-8.67990449176296!3d41.16637910167289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465f41da3e0fd%3A0xf4dfb56e4460e634!2sWorten!5e0!3m2!1spt-PT!2spt!4v1709828803654!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>                
+                </div>
+                <!-- Dados Loja-->
+                <div class="col-12 col-md-6 my-auto text-center">
+                    <div class="row">
+                        <div class="col">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                           <span>Norte Shopping, R. Sara Afonso 112 Loja 112</span>
+                           <span>4460-841 Sra. da Hora</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span>Domingo a 5ª: 10:00 - 23:00 6ª e Sábado: 10:00 - 23:59</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Form de contacto -->
+            <div class="row mt-3 text-center">
+                <div class="col "><!-- Button trigger modal -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Fale connosco!
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade text-start" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de contacto</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Insira o seu Email">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Insira a sua mensagem" rows="3"></textarea>
+                              </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn">Enviar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer class="container-fluid text-center">
         <div class="row p-3">
