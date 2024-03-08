@@ -1,0 +1,28 @@
+:root{
+    --vermelho : #e51b15;
+    --branco : #ffffff;
+}
+ 
+body {
+    font-family: "Open Sans", sans-serif;
+}
+.branco {
+    background-color: var(--branco);
+}
+header {
+    background-color: var(--vermelho);
+}
+header img{
+    height: 34px;
+}
+header a{
+    color: var(--branco);
+}
+
+main img {
+    height: 510px;
+}
+
+
+
+
