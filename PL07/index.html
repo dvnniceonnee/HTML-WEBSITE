@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    
+    <main>
+        <div>
+            <div class="divEx">
+            <h1>Exercicio 1</h1>
+            <button class="btn" onclick="corFundo('#191970')">Fundo de pagina Azul</button>
+            <button class="btn" onclick="corFundo('#00FA9A')">Fundo de pagina Verde</button>
+            <button class="btn" onclick="corFundo('#4B0082')">Fundo de pagina Roxo</button>
+            </div>
+            <hr>
+            <div class="divEx">
+                <h1>Exercicio 2 - diplay</h1>
+                <button onclick="showText()" id="b-ex2a">Mostrar</button>
+                <p id="p-ex2a" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat tempore maiores sed nesciunt beatae commodi quam eius mollitia, est praesentium nihil vel? Quod veritatis dicta eum eveniet laudantium molestiae accusamus.
+                Odio laudantium provident corporis doloribus repellendus distinctio? Distinctio atque nam, nihil illum qui soluta ipsam quos eaque officiis necessitatibus obcaecati perspiciatis sequi, assumenda, deserunt est ab accusamus ducimus ratione adipisci?
+                Alias, ullam, cum quidem officiis neque officia consequuntur sapiente incidunt exercitationem quo labore corrupti. Fugiat in similique id quam! Magnam quae vel harum similique ea, saepe quidem unde veniam ipsa.
+                Nulla ipsam nisi corrupti ullam natus eligendi, placeat voluptatem. Accusantium doloremque dolorum quasi! Sint architecto dolorum, molestiae accusantium quaerat assumenda quo dolor quae officiis ducimus harum tempora impedit iste unde.</p>
+            </div>
+            <div class="divEx">
+                <button id="b-ex2b" onclick="fillText()">Preencher</button>
+                <h1>Exercicio 2- conteudo</h1>
+                <p id="p-ex2b"></p>
+        
+            </div>
+            <hr>
+            <div class="divEx">
+                <h1>Exercicio 3</h1>
+                <button id="b-ex3a" onclick="visibilidadeFrase()">Mostrar</button>
+                <p><span id="frase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat tempore maiores sed nesciunt beatae commodi quam eius mollitia, est praesentium nihil vel? Quod veritatis dicta eum eveniet laudantium molestiae accusamus.</span>
+                Odio laudantium provident corporis doloribus repellendus distinctio? Distinctio atque nam, nihil illum qui soluta ipsam quos eaque officiis necessitatibus obcaecati perspiciatis sequi, assumenda, deserunt est ab accusamus ducimus ratione adipisci?
+                Alias, ullam, cum quidem officiis neque officia consequuntur sapiente incidunt exercitationem quo labore corrupti. Fugiat in similique id quam! Magnam quae vel harum similique ea, saepe quidem unde veniam ipsa.
+                Nulla ipsam nisi corrupti ullam natus eligendi, placeat voluptatem. Accusantium doloremque dolorum quasi! Sint architecto dolorum, molestiae accusantium quaerat assumenda quo dolor quae officiis ducimus harum tempora impedit iste unde.</p>
+            </div>
+            <div class="divEx">
+                <h1>Exercicio 4 e 5</h1>
+                <p id="p-ex4" style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat tempore maiores sed nesciunt beatae commodi quam eius mollitia, est praesentium nihil vel? Quod veritatis dicta eum eveniet laudantium molestiae accusamus.
+                Odio laudantium provident corporis doloribus repellendus distinctio? Distinctio atque nam, nihil illum qui soluta ipsam quos eaque officiis necessitatibus obcaecati perspiciatis sequi, assumenda, deserunt est ab accusamus ducimus ratione adipisci?
+                Alias, ullam, cum quidem officiis neque officia consequuntur sapiente incidunt exercitationem quo labore corrupti. Fugiat in similique id quam! Magnam quae vel harum similique ea, saepe quidem unde veniam ipsa.
+                Nulla ipsam nisi corrupti ullam natus eligendi, placeat voluptatem. Accusantium doloremque dolorum quasi! Sint architecto dolorum, molestiae accusantium quaerat assumenda quo dolor quae officiis ducimus harum tempora impedit iste unde.</p>
+                <button onclick="alterarTamanho('40px', 'center')">Aumentar</button>
+                <button onclick="alterarTamanho('10px', 'right')">Diminuir</button>
+                <br>
+                <button onclick="mudarTamanho(2)">Incrementar</button>
+                <button onclick="mudarTamanho(-2)">Decrementar</button>
+            </div>
+            <div class="divEx">
+            
+            </div>
+    </div>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
+</body>
+</html>
