@@ -1,0 +1,78 @@
+:root{
+    --branco:white;
+    --roxo : #2c150d;
+}
+body{
+    background-image: url("files\img\logo.png");
+    background-color: black;
+}
+header{
+    max-width: 100%;
+    margin-inline: auto;
+    font-weight: bold;
+    color: var(--whiteColor);
+    background-color: #1a063b;
+}
+.hrNavBar{
+    border: solid 0.5px white;
+    color: var(--whiteColor);
+    width: 100%;
+    background-color: white;
+}
+main{
+    max-width: 100%;
+    margin: auto;
+}
+.backgroundImage{
+    background-image: url("hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+    height: 700px;
+    border-radius: 5px;
+    background-position: 50%;
+}
+
+.roxoBackground{
+    background-color: #19194b;
+}
+
+.supportBackground{
+    background-color: #170c2a;
+}
+
+.borderHr{
+    border-color: #7232aa;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 2px 2px;
+}
+
+.cards{
+    border-color: #7232aa;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#card h1{
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+    color: #7232aa;
+}
+#card h2{
+    font-size: 50px;
+}
+
+.blueBackground{
+    background-color: #321a92;
+}
+
+
+.textWhite{
+    color: var(--branco);
+}
+
+
+
