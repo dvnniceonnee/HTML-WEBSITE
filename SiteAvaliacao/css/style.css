@@ -33,6 +33,14 @@ main{
     background-position: 50%;
 }
 
+.backgroundImage2{
+    background-image: url("imagemp2p.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    background-position: 50% 75%;
+}
+
 .roxoBackground{
     background-color: #19194b;
 }
@@ -52,7 +60,7 @@ main{
 .cards{
     border-color: #7232aa;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 #card h1{
@@ -73,6 +81,54 @@ main{
 .textWhite{
     color: var(--branco);
 }
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.main2{
+    height: 100vh;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+
+
 
 
 
