@@ -1,11 +1,28 @@
 :root{
     --branco:white;
     --roxo : #2c150d;
+    --purple : rgb(154, 12, 248);
 }
+
+
 body{
     background-image: url("files\img\logo.png");
     background-color: black;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+.text-white{
+    color: var(--branco);
+}
+.text-purple{
+    color: var(--purple);
+}
+.border-purple{
+    border-color: #7232aa;
+    border-style: solid;
+}
+
 header{
     max-width: 100%;
     margin-inline: auto;
@@ -37,7 +54,6 @@ main{
     background-image: url("imagemp2p.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height:100%;
     background-position: 50% 75%;
 }
 
@@ -49,37 +65,19 @@ main{
     background-color: #170c2a;
 }
 
-.borderHr{
-    border-color: #7232aa;
-    border-style: solid;
-    border-radius: 5px;
-    border-width: 1px;
-    margin: 2px 2px;
-}
-
-.cards{
-    border-color: #7232aa;
-    border-style: solid;
-    border-radius: 2px;
-}
-
 #card h1{
     font-size: 60px;
     font-style: italic;
     font-weight: bold;
     color: #7232aa;
 }
+
 #card h2{
     font-size: 50px;
 }
 
 .blueBackground{
     background-color: #321a92;
-}
-
-
-.textWhite{
-    color: var(--branco);
 }
 
 .navbar-toggler:focus,
