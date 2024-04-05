@@ -13,3 +13,11 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
+
+let bitcoinPrice = 60000;
+
+function valueClick($value){
+    let btc = (($value * 100)/bitcoinPrice) * 0.96; 
+    document.getElementById('coinValue').value = btc;
+    document.getElementById('euroValue').value = $value;
+}

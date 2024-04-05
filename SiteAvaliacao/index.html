@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +19,11 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body >
-    <header class="fixed my-0">
+<body>
+<header class="fixed my-0">
       <nav class="navbar navbar-expand-lg w-75 mx-auto" data-bs-theme="dark">
             <div class="container-fluid text-white">
-              <a class="navbar-brand me-3" href="#"><img width="50px" src="files/img/logo.png" alt=""></a>
+              <a class="navbar-brand me-3" href="index.html"><img width="50px" src="files/img/logo.png" alt=""></a>
               <div class="collapse navbar-collapse w-100" id="navbarNav">
                 <ul class="navbar-nav w-100">
                   <li class="nav-item my-auto w-100">
@@ -31,9 +32,9 @@
                   <li class="nav-item mx-auto w-100">
                     <div class="container"> 
                       <div class="row text-center">
-                        <div class="col-12 col-md-4"><a class="nav-link text-white fs-6" href="#">Info</a></div> 
-                        <div class="col-12 col-md-4"><a class="nav-link text-white fs-5 w-100" href="#">Trade</a></div>
-                        <div class="col-12 col-md-4"><a class="nav-link text-white fs-6" href="#">Contact</a></div>  
+                        <div class="col-12 col-md-4"><a class="nav-link text-white fs-6" href="index.html">Info</a></div> 
+                        <div class="col-12 col-md-4"><a class="nav-link text-white fs-5 w-100" href="index.html">Trade</a></div>
+                        <div class="col-12 col-md-4"><a class="nav-link text-white fs-6" href="contact.html">Contact</a></div>  
                       </div>                                      
                     </div>
                   </li>
@@ -42,14 +43,14 @@
                   </li>
                 </ul>
               </div>
-              <a class="navbar-brand collapse navbar-collapse ms-3 " href="#"><img width="50px" src="files/img/logo.png" alt=""></a>
+              <a class="navbar-brand collapse navbar-collapse ms-3 " href="index.html"><img width="50px" src="files/img/logo.png" alt=""></a>
               <button class="navbar-toggler border-0 " type="button" id="btnNav" onclick="retirarBorder()" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             </div>
       </nav>
     </header>
-    <main>
+  <main>
       <div class="container-fluid p-0">
         <div class="row text-white mx-auto backgroundImage w-100 h-100">
           <div class="row w-100 mx-auto">
@@ -81,16 +82,17 @@
                   </div>
                   <div class="card-body">
                     <div class="input-group mt-4 mb-4">
-                      <input type="text" value="0.003" class="form-control border-0 bg-body-secondary p-3 fw-bold">
+                      <input type="text" value="0.003" class="form-control border-0 bg-body-secondary p-3 fw-bold" id="coinValue">
                       <button class="btn border-0 bg-body-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img class="w-25 d-inline me-1" src="files/img/icons/BTC.svg" alt=""><span class="m-0 p-0">BTC</span>
                       </button>
                       <ul class="dropdown-menu dropdown-menu-end">
-                        <li class="mx-auto"><a class="dropdown-item mx-auto" href="#"><img src="files/img/icons/ETH.svg" class="me-2" width="20%" alt=""><span class="d-inline w-100">ETH</span></a></li>
+                        <li class="d-block" ><a class="dropdown-item mx-auto text-center" href="#"><img src="files/img/icons/ETH.svg" class="me-2" width="20%" alt=""><span class="d-inline w-100">ETH</span></a></li>
+                        <li ><a class="dropdown-item mx-auto text-end" href="#"><img src="files/img/icons/ETH.svg" class="me-2" width="20%" alt=""><span class="d-inline w-100">ETH</span></a></li>
                       </ul>
                     </div>
                     <div class="input-group">
-                      <input type="text" value="200€" class="form-control border-0 bg-body-secondary p-3 fw-bold" >
+                      <input type="text" value="200€" class="form-control border-0 bg-body-secondary p-3 fw-bold" id="euroValue">
                       <button class="btn bg-body-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="container">
                           <div class="row">
@@ -102,16 +104,16 @@
                     </div>
                     <div class="d-flex align-content-center flex-wrap mt-5">
                       <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                        <button type="button" class="w-100 btn btn-light bg-body-secondary rounded-pill">€200</button>
+                        <button type="button" onclick="valueClick(200)" class="w-100 btn btn-light bg-body-secondary rounded-pill">€200</button>
                       </div>
                       <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                        <button type="button" class="w-100 btn btn-light bg-body-secondary rounded-pill">€400</button>
+                        <button type="button" onclick="valueClick(400)" class="w-100 btn btn-light bg-body-secondary rounded-pill">€400</button>
                       </div>
                       <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                        <button type="button" class="w-100 btn btn-light bg-body-secondary rounded-pill">€600</button>
+                        <button type="button" onclick="valueClick(600)" class="w-100 btn btn-light bg-body-secondary rounded-pill">€600</button>
                       </div>
                       <div class="col-6 col-md-4 col-lg-4 col-xl-3 d-flex flex-nowrap">
-                        <button type="button" class="w-100 btn btn-light bg-body-secondary rounded-pill">€1000</button>
+                        <button type="button" onclick="valueClick(1000)" class="w-100 btn btn-light bg-body-secondary rounded-pill">€1000</button>
                       </div>
                     </div>
                     <div class="row mb-5 mt-2 text-center">
@@ -125,8 +127,8 @@
             </div>
         </div>
       </div>
-      <div class="row mx-auto border-purple border-start-0 border-end-0 p-0 vh-100">
-        <div class="col-12 col-md-10 mx-auto position-relative backgroundImage2 border-purple border-top-0 border-bottom-0 p-0">
+      <div class="row mx-auto border-bottom-0 border-start-0 border-end-0 border-purple p-0 vh-100 ">
+        <div class="col-12 col-md-10 mx-auto position-relative bg-imagep2p border-purple border-top-0 border-bottom-0 p-0">
             <div class="position-absolute start-50 mb-0 bottom-0 text-white translate-middle">
               <h4>Multiple Coins Available to sell</h4>
               <div id="carouselExampleRide" class="carousel slide mt-4" data-bs-ride="true">
@@ -165,11 +167,11 @@
             </div>
       </div>
     </div>
-      <div class="row text-white border-purple border-top-0 border-end-0 border-start-0">
+      <div class="row text-white border-bottom-0 border-end-0 border-start-0 border-purple ">
         <div class="row mx-auto">
-          <div class="col-10 mx-auto">
+          <div class="col-12 col-md-10 mx-auto">
             <div class="row ">
-              <div class="col-12 col-md-6 border-purple border-top-0 border-bottom-0 blueBackground cards p-5 container-fluid">
+              <div class="col-12 col-md-6 border-top-0 border-bottom-0 border-purple blueBackground cards p-5">
                 <div class="row">
                   <div class="text-start" id="card">
                     <h1>Cash</h1>
@@ -181,7 +183,7 @@
                   <img src="files/img/imagem11.jpeg" alt="">
                 </div>
               </div>
-              <div class="col-12 col-md-6 border-purple border-top-0 border-bottom-0 supportBackground cards p-5 border-start-0">
+              <div class="col-12 col-md-6 border-top-0 border-bottom-0 supportBackground cards p-5 border-start-0 border-purple ">
                 <div class="row">
                   <div class="text-start" id="card">
                     <h1>Support</h1>
@@ -197,57 +199,87 @@
         </div>
       </div>
     </div>
-      <div class="col-10 mx-auto d-block roxoBackground cards p-5 border-top-0">
-        <div class="row">
-          <div class="text-start" id="card">
-            <h1>Coins</h1>
-            <h2>Start Trading now!</h2>
-            <h4>Multiple coins available to sell</h4>
+    <div class="row text-white border-bottom-0 border-end-0 border-start-0 border-purple mx-auto">
+      <div class="col-12 col-md-10 mx-auto bg-roxo cards p-5 border-purple border-top-0 border-bottom-0">
+        <div class="accordion " id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="fs-3">How is the process to obtain the cash?</span>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show border-0" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>The process is very simple and does not require any meetings with anyone, you will just need to go to a ATM and insert the codes provided to you!</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="fs-3">How long does the process of getting the cash takes?</span>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>The timeframe depends on you, so basically the faster you can do it the faster you will get the cash, but usually 1000€ can be gotten in minutes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="fs-3">Is this a trusted entity?</span>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Yes, we have plenty of reputation across many p2p websites, like LocalCoinSwap, LocalMonero, etc.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row p-0 rounded w-75 mx-auto mt-5">
-          <img class="" src="files/img/imagem10.jpeg" alt="">
-        </div>
       </div>
+    </div>
     </main>
-    <footer class="mx-auto border-purple border-bottom-0 border-start-0 border-end-0 py-5">
+    <footer class="mx-auto border-bottom-0 border-start-0 border-end-0 border-purple py-5">
       <div class="container text-white ">
         <div class="row mx-auto">
           <div class="col-6 col-md-3">
-            <div class="d-flex flex-column mb-3 text-white">
-            <div class="my-1 text-purple"><h5>Quick Sell</h5></div>
-              <div class="text-start"><a class="text-decoration-none text-white" href="#">Sell USDT</a></div>
-              <div class="text-start"><a class="text-decoration-none text-white" href="">Sell BTC</a></div>
-              <div class="text-start"><a class="text-decoration-none text-white" href="">Sell LTC</a></div>
-              <div class="text-start"><a class="text-decoration-none text-white" href="">Sell SOL</a></div>
-              <div class="text-start"><a class="text-decoration-none text-white" href="">Sell BNB</a></div>
-              <div class="text-start"><a class="text-decoration-none text-white" href="">Sell BCH</a></div>
+            <div class="d-flex flex-column mb-3 text-center text-md-start" id="footer-block">
+              <div class="my-1 text-purple"><h5>Quick Sell</h5></div>
+              <div><a href="#">Sell USDT</a></div>
+              <div><a href="">Sell BTC</a></div>
+              <div><a href="">Sell LTC</a></div>
+              <div><a href="">Sell SOL</a></div>
+              <div><a href="">Sell BNB</a></div>
+              <div><a href="">Sell BCH</a></div>
             </div>
           </div>
           <div class="col-6 col-md-3">            
-            <div class="d-flex flex-column mb-3 text-start">
+            <div class="d-flex flex-column mb-3 text-center text-md-start" id="footer-block">
               <div class="my-1 text-purple"><h5>Check Rates</h5></div>
-              <div>USDT Rate</div>
-              <div>BTC Rate</div>
-              <div>LTC Rate</div>
-              <div>SOL Rate</div>
-              <div>BNB Rate</div>
-              <div>BCH Rate</div>
+              <div><a href="">USDT Rate</a></div>
+              <div><a href="">BTC Rate</a></div>
+              <div><a href="">LTC Rate</a></div>
+              <div><a href="">SOL Rate</a></div>
+              <div><a href="">BNB Rate</a></div>
+              <div><a href="">BCH Rate</a></div>
             </div>
           </div>
           <div class="col-6 col-md-3">            
-            <div class="d-flex flex-column mb-3 text-start">
+            <div class="d-flex flex-column mb-3 text-center text-md-start">
               <div>Contacts</div>
+              <div>Trade</div>
               <div>Faq</div>
             </div>
           </div>
           <div class="col-6 col-md-3">            
-            <div class="d-flex flex-column mb-3">
+            <div class="d-flex flex-column mb-3 text-center text-md-start">
               <div>Get in Touch</div>
-              <div class="d-flex flex-row">
-                <div class="text-start me-2"><a href=""><i class="bi fs-3 text-white bi-telegram"></i></a></div>
-                <div class="text-start me-2"><a href=""><i class="bi fs-3 text-white bi-whatsapp"></i></a></div>
-                <div class="text-start me-2"><a href=""><i class="bi fs-3 text-white bi-envelope"></i></a></div>
+              <div class="d-flex flex-row mx-auto m-sm-auto m-md-0">
+                <div class="me-2"><a href=""><i class="bi fs-3 text-white bi-telegram"></i></a></div>
+                <div class="me-2"><a href=""><i class="bi fs-3 text-white bi-whatsapp"></i></a></div>
+                <div class="me-2"><a href=""><i class="bi fs-3 text-white bi-envelope"></i></a></div>
                 
               </div>
             </div>
